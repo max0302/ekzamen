@@ -1,0 +1,31 @@
+. {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.page-header {
+    height: 70px;
+    padding-top: 10px;
+    background-color: black;
+}
+.navbar-inverse {
+    background-color: black;
+    border-color: black;
+}
+
+.navbar-inverse .navbar-nav {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #ff9b51;
+}
+
+.home {
+    background-image: url("../images/logo1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500vh;
+}

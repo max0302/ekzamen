@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Components</title>
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <style>
+        .heart {
+            color: red;
+            font-size: 50px;
+        }
+        .fixed-block {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container fixed-block">
+
+        <div class="row">
+            <h1><span class="heart glyphicon glyphicon-heart"></span> Hello <span class="heart glyphicon glyphicon-heart"></span></h1>
+        </div>
+
+
+        <div class="row">
+            <h1><span class="heart glyphicon glyphicon-euro"></span> Hello <span class="heart glyphicon glyphicon-euro"></span></h1>
+        </div>
+
+
+        <div class="row">
+            <h1><span class="heart glyphicon glyphicon-tint"></span> Hello <span class="heart glyphicon glyphicon-tint"></span></h1>
+        </div>
+
+    </div>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <h2 class="page-header"><span class="glyphicon glyphicon-picture" style="color: blue;"></span>Фото</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="images/pict1.jpg" alt="image-nice" class="img-responsive img-rounded img-circle">
+                        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, illo.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+                            Launch demo modal
+                            <span class="glyphicon glyphicon-search">
+
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="images/pict2.jpg" alt="image-nice" class="img-responsive img-rounded img-circle">
+                        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eveniet!</p>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+                            Launch demo modal
+                            <span class="glyphicon glyphicon-search">
+
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="images/pict3.jpg" alt="image-nice" class="img-responsive img-rounded img-circle">
+                        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, quasi.</p>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+                            Launch demo modal
+                            <span class="glyphicon glyphicon-search">
+
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="images/pict4.jpg" alt="image-nice" class="img-responsive img-rounded img-circle">
+                        <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, repudiandae.</p>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">
+                            Launch demo modal
+                            <span class="glyphicon glyphicon-search">
+
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="page-header"><span class="glyphicon glyphicon-list-alt" style="color: blue;"></span>Описание</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur deserunt ducimus eius eligendi enim error exercitationem fuga iusto, libero modi neque officia officiis quisquam rem repudiandae rerum sequi sunt unde voluptatibus. Consequatur dolores eos, laboriosam possimus sit tempora vel voluptate? Ab asperiores assumenda consequatur cum deserunt dolor dolorem enim harum hic, inventore laborum, minus placeat quia quisquam quos repudiandae ut voluptate, voluptatem. Ab accusantium aperiam, at beatae corporis debitis deleniti deserunt dolorum ea eos hic id illo impedit iusto, laboriosam magnam minus officia pariatur perspiciatis, praesentium quia reiciendis repellendus soluta sunt tempora vel voluptates! A accusamus accusantium aliquam animi architecto aspernatur consectetur cupiditate dicta distinctio dolores ducimus eligendi, error, eum fugiat illum itaque magnam modi necessitatibus nesciunt nostrum odit officia officiis pariatur quis recusandae repellendus reprehenderit rerum soluta tempore unde vel veniam vitae voluptate? A autem, fugiat incidunt iure laboriosam, necessitatibus numquam rerum sint unde ut, veniam vero voluptates voluptatum! A, assumenda, autem beatae dicta eos exercitationem expedita explicabo iure laudantium minus necessitatibus odit officia pariatur quidem repellendus sed soluta suscipit temporibus voluptates voluptatum. Aspernatur blanditiis deserunt dicta dolores eos molestiae nisi omnis quasi repellendus voluptates. Amet consectetur cum dignissimos doloremque enim eum, exercitationem iure maiores nam nemo porro.</p>
+        </div>
+
+    </div>
+</div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="libs/js/bootstrap.min.js"></script>
+
+
+        <script>
+            setInterval(function () {
+                if($('.heart').css('font-size') === '70px'){
+                $('.heart').css('font-size','30px');
+            } else {
+                $('.heart').css('font-size','70px');
+            }
+            }, 1000);
+        </script>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <img src="images/pict1.jpg" class="img-responsive">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem consectetur culpa deleniti hic laudantium non placeat quos vitae. Aliquam autem consectetur debitis deleniti dolor earum enim, illo ipsam iusto molestiae necessitatibus nihil odit officia, sint temporibus, unde voluptate? Accusamus deleniti expedita in laboriosam officiis perspiciatis quis ratione unde veritatis?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <img src="images/pict2.jpg" class="img-responsive">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem consectetur culpa deleniti hic laudantium non placeat quos vitae. Aliquam autem consectetur debitis deleniti dolor earum enim, illo ipsam iusto molestiae necessitatibus nihil odit officia, sint temporibus, unde voluptate? Accusamus deleniti expedita in laboriosam officiis perspiciatis quis ratione unde veritatis?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <img src="images/pict3.jpg" class="img-responsive">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem consectetur culpa deleniti hic laudantium non placeat quos vitae. Aliquam autem consectetur debitis deleniti dolor earum enim, illo ipsam iusto molestiae necessitatibus nihil odit officia, sint temporibus, unde voluptate? Accusamus deleniti expedita in laboriosam officiis perspiciatis quis ratione unde veritatis?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <img src="images/pict4.jpg" class="img-responsive">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem consectetur culpa deleniti hic laudantium non placeat quos vitae. Aliquam autem consectetur debitis deleniti dolor earum enim, illo ipsam iusto molestiae necessitatibus nihil odit officia, sint temporibus, unde voluptate? Accusamus deleniti expedita in laboriosam officiis perspiciatis quis ratione unde veritatis?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
